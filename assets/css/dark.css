@@ -1,0 +1,85 @@
+/* ==========================================
+   ToolVerse Dark Theme
+========================================== */
+
+body.dark{
+
+    --bg:#0F172A;
+
+    --card:#1E293B;
+
+    --text:#F8FAFC;
+
+    --text-light:#CBD5E1;
+
+    --border:#334155;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+body.dark header{
+
+    background:#111827;
+
+    border-bottom:1px solid #334155;
+
+}
+
+body.dark footer{
+
+    background:#111827;
+
+    border-top:1px solid #334155;
+
+}
+
+body.dark .card{
+
+    background:var(--card);
+
+}
+
+body.dark textarea{
+
+    background:var(--card);
+
+    color:var(--text);
+
+}
+
+body.dark input{
+
+    background:var(--card);
+
+    color:var(--text);
+
+}
+
+body.dark nav a{
+
+    color:var(--text);
+
+}
+
+body.dark .footer-links a{
+
+    color:var(--text);
+
+}
+
+body.dark .hero-search input{
+
+    background:var(--card);
+
+}
+
+body.dark .badge{
+
+    background:#312E81;
+
+    color:white;
+
+}
