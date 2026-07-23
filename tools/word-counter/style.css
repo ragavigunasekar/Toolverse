@@ -1,71 +1,266 @@
+/* ==========================================
+   ToolVerse Word Counter
+   Violet Premium Theme
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+
+    --primary:#7C3AED;
+    --primary-dark:#5B21B6;
+    --background:#F8F5FF;
+    --card:#FFFFFF;
+    --border:#E9D5FF;
+    --text:#1F1B2E;
+
+    --shadow:0 15px 40px rgba(124,58,237,.12);
+
+}
+
 body{
-font-family:Segoe UI,sans-serif;
-background:#f5f7fb;
-margin:0;
-padding:40px;
+
+    background:var(--background);
+
+    color:var(--text);
+
 }
 
 .container{
-max-width:900px;
-margin:auto;
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
 }
 
-h1{
-color:#2563eb;
+/* Header */
+
+header{
+
+    background:white;
+
+    border-bottom:1px solid var(--border);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+.nav{
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.brand{
+
+    text-decoration:none;
+
+    font-size:28px;
+
+    color:var(--primary-dark);
+
+    font-weight:700;
+
+}
+
+.home{
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* Hero */
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    color:#666;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+
 }
 
 textarea{
 
-width:100%;
+    width:100%;
 
-height:250px;
+    min-height:280px;
 
-padding:20px;
+    resize:vertical;
 
-font-size:18px;
+    border:none;
 
-border-radius:15px;
+    outline:none;
 
-border:none;
+    padding:25px;
 
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+    font-size:18px;
 
-resize:vertical;
+    border-radius:20px;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    line-height:1.8;
 
 }
+
+/* Buttons */
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:25px 0;
+
+    flex-wrap:wrap;
+
+}
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 28px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* Stats */
 
 .stats{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 
-gap:20px;
+    gap:22px;
 
-margin-top:30px;
-
-}
-
-.box{
-
-background:white;
-
-padding:20px;
-
-text-align:center;
-
-border-radius:15px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+    margin-top:20px;
 
 }
 
-.box h2{
+.card{
 
-font-size:40px;
+    background:var(--card);
 
-margin:0;
+    padding:28px;
 
-color:#2563eb;
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.card h2{
+
+    color:var(--primary);
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#666;
+
+    font-weight:500;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+textarea{
+
+min-height:220px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+button{
+
+width:100%;
+
+}
 
 }

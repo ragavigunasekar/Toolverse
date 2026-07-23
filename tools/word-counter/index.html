@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,27 +9,83 @@
 
 <title>Word Counter | ToolVerse</title>
 
+<meta name="description" content="Free online Word Counter. Count words, characters, paragraphs and reading time instantly.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<header>
+
+<div class="container nav">
+
+<a href="../../index.html" class="brand">
+
+💜 ToolVerse
+
+</a>
+
+<a href="../../index.html" class="home">
+
+← Home
+
+</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
 <div class="container">
 
-<h1>📝 Word Counter</h1>
+<h1>Word Counter</h1>
 
 <p>
-Paste or type your text below.
+
+Count words, characters, sentences, paragraphs and reading time instantly.
+
 </p>
 
 <textarea
+
 id="text"
-placeholder="Start typing..."></textarea>
+
+placeholder="Start typing or paste your text here..."></textarea>
+
+<div class="buttons">
+
+<button id="copyBtn">
+
+📋 Copy
+
+</button>
+
+<button id="clearBtn">
+
+🗑 Clear
+
+</button>
+
+<button id="downloadBtn">
+
+⬇ Download
+
+</button>
+
+</div>
 
 <div class="stats">
 
-<div class="box">
+<div class="card">
 
 <h2 id="words">0</h2>
 
@@ -36,7 +93,7 @@ placeholder="Start typing..."></textarea>
 
 </div>
 
-<div class="box">
+<div class="card">
 
 <h2 id="characters">0</h2>
 
@@ -44,7 +101,23 @@ placeholder="Start typing..."></textarea>
 
 </div>
 
-<div class="box">
+<div class="card">
+
+<h2 id="spaces">0</h2>
+
+<p>No Spaces</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="paragraphs">0</h2>
+
+<p>Paragraphs</p>
+
+</div>
+
+<div class="card">
 
 <h2 id="sentences">0</h2>
 
@@ -52,7 +125,7 @@ placeholder="Start typing..."></textarea>
 
 </div>
 
-<div class="box">
+<div class="card">
 
 <h2 id="reading">0 min</h2>
 
@@ -64,7 +137,10 @@ placeholder="Start typing..."></textarea>
 
 </div>
 
+</section>
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
