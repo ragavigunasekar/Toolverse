@@ -1,122 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ToolVerse | The Internet's Toolbox</title>
 
-    <meta name="description" content="Free online tools for everyone. Fast, simple and privacy-friendly.">
+    <meta name="description"
+        content="ToolVerse is a free collection of online tools for students, developers, creators and everyone.">
+
+    <meta name="keywords"
+        content="toolverse, online tools, word counter, calculator, developer tools, pdf tools">
+
+    <meta name="author" content="ToolVerse">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-    <div class="logo">
-        🛠️ ToolVerse
-    </div>
+    <header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Tools</a>
-        <a href="#">About</a>
-    </nav>
-</header>
+        <div class="container nav">
 
-<section class="hero">
+            <div class="logo">
 
-    <h1>The Internet's Toolbox</h1>
+                <span class="logo-icon">💜</span>
 
-    <p>
-        Free online tools that make everyday tasks easier.
-        No sign up. No installation. Just use.
-    </p>
+                <div>
 
-    <input
-        type="text"
-        id="searchBox"
-        placeholder="Search tools..."
-    >
+                    <h2>ToolVerse</h2>
 
-</section>
+                    <p>The Internet's Toolbox</p>
 
-<section class="categories">
+                </div>
 
-<h2>Categories</h2>
+            </div>
 
-<div class="grid">
+            <nav>
 
-<div class="card">📝 Text Tools</div>
+                <a href="#">Home</a>
 
-<div class="card">💻 Developer</div>
+                <a href="#">Categories</a>
 
-<div class="card">📄 PDF</div>
+                <a href="#">Popular</a>
 
-<div class="card">🖼️ Image</div>
+                <a href="#">About</a>
 
-<div class="card">🧮 Calculators</div>
+            </nav>
 
-<div class="card">🎓 Student</div>
+        </div>
 
-</div>
+    </header>
 
-</section>
+    <section class="hero">
 
-<section class="popular">
+        <div class="container">
 
-<h2>Popular Tools</h2>
+            <span class="badge">
+                🚀 Free • Fast • Privacy First
+            </span>
 
-<div class="grid">
+            <h1>
 
-<a href="tools/word-counter/index.html" class="tool-card">
+                One Website.
 
-<h3>Word Counter</h3>
+                <span>Hundreds of Tools.</span>
 
-<p>Count words, characters, sentences and reading time.</p>
+            </h1>
 
-</a>
+            <p>
 
-<div class="tool-card coming">
+                ToolVerse helps students, developers, designers, creators and
+                professionals solve everyday problems instantly.
 
-<h3>Password Generator</h3>
+            </p>
 
-<p>Coming Soon</p>
+            <input type="text" id="searchBox" placeholder="Search Tool...">
 
-</div>
+        </div>
 
-<div class="tool-card coming">
+    </section>
 
-<h3>QR Generator</h3>
+    <section class="categories">
 
-<p>Coming Soon</p>
+        <div class="container">
 
-</div>
+            <h2>Browse Categories</h2>
 
-<div class="tool-card coming">
+            <div class="category-grid">
 
-<h3>JSON Formatter</h3>
+                <div class="category">
+                    📝
+                    <h3>Text</h3>
+                </div>
 
-<p>Coming Soon</p>
+                <div class="category">
+                    💻
+                    <h3>Developer</h3>
+                </div>
 
-</div>
+                <div class="category">
+                    🧮
+                    <h3>Calculators</h3>
+                </div>
 
-</div>
+                <div class="category">
+                    📄
+                    <h3>PDF</h3>
+                </div>
 
-</section>
+                <div class="category">
+                    🖼️
+                    <h3>Images</h3>
+                </div>
 
-<footer>
+                <div class="category">
+                    🎓
+                    <h3>Students</h3>
+                </div>
 
-<p>
+            </div>
 
-© 2026 ToolVerse • Built with ❤️
+        </div>
 
-</p>
+    </section>
 
-</footer>
+    <section class="popular">
 
-<script src="script.js"></script>
+        <div class="container">
+
+            <div class="title">
+
+                <h2>Popular Tools</h2>
+
+                <p>More tools are added every week.</p>
+
+            </div>
+
+            <div class="tool-grid">
+
+                <a class="tool-card"
+                    href="tools/word-counter/index.html">
+
+                    <div class="tool-icon">
+                        📝
+                    </div>
+
+                    <h3>Word Counter</h3>
+
+                    <p>
+
+                        Count words, characters, sentences and reading time.
+
+                    </p>
+
+                </a>
+
+                <div class="tool-card coming">
+
+                    <div class="tool-icon">
+                        🔤
+                    </div>
+
+                    <h3>Character Counter</h3>
+
+                    <p>
+
+                        Coming Soon
+
+                    </p>
+
+                </div>
+
+                <div class="tool-card coming">
+
+                    <div class="tool-icon">
+                        🔐
+                    </div>
+
+                    <h3>Password Generator</h3>
+
+                    <p>
+
+                        Coming Soon
+
+                    </p>
+
+                </div>
+
+                <div class="tool-card coming">
+
+                    <div class="tool-icon">
+                        🧮
+                    </div>
+
+                    <h3>Age Calculator</h3>
+
+                    <p>
+
+                        Coming Soon
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="stats">
+
+        <div class="container stats-grid">
+
+            <div>
+
+                <h2>1+</h2>
+
+                <p>Working Tool</p>
+
+            </div>
+
+            <div>
+
+                <h2>100+</h2>
+
+                <p>Planned Tools</p>
+
+            </div>
+
+            <div>
+
+                <h2>0₹</h2>
+
+                <p>Free Forever</p>
+
+            </div>
+
+            <div>
+
+                <h2>∞</h2>
+
+                <p>Possibilities</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="container footer">
+
+            <div>
+
+                <h2>ToolVerse</h2>
+
+                <p>
+
+                    Building the internet's most useful free toolbox.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <a href="pages/about.html">
+
+                    About
+
+                </a>
+
+                <a href="pages/privacy.html">
+
+                    Privacy
+
+                </a>
+
+                <a href="pages/contact.html">
+
+                    Contact
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
